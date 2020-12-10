@@ -2,8 +2,8 @@ provider "packet" {
   auth_token = var.token
 }
 
-resource "packet_device" "pramod-web1" {
-  hostname         = "PramodTerraform"
+resource "packet_device" "web1" {
+  hostname         = "web1_server"
   plan             = "c3.medium.x86"
   facilities       = ["sin3"]
   operating_system = "ubuntu_20_04"
